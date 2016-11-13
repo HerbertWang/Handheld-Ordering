@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_gray" >
+
+    <ScrollView
+        style="@style/fill"
+        android:scrollbars="none"
+        android:layout_above="@+id/relativeLayoutFooter">
+
+        <LinearLayout
+            style="@style/fill"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/setting_text"
+                android:layout_marginTop="20dp"
+                android:text="IP Address" />
+
+            <EditText
+                android:id="@+id/etIpAddress"
+                style="@style/setting_input_box" />
+
+            <TextView
+                style="@style/setting_text"
+                android:text="Shop ID" />
+
+            <EditText
+                android:id="@+id/etShopId"
+                style="@style/setting_input_box"
+                android:digits="0123456789" />
+
+            <TextView
+                style="@style/setting_text"
+                android:text="Account ID" />
+
+            <EditText
+                android:id="@+id/etAccountId"
+                style="@style/setting_input_box"
+                android:digits="0123456789" />
+
+            <TextView
+                style="@style/setting_text"
+                android:text="Modifier Category ID" />
+
+            <EditText
+                android:id="@+id/etCategoryId"
+                style="@style/setting_input_box" />
+
+            <CheckBox
+                android:text="@string/quick_code_show_text_pad"
+                android:id="@+id/swQuickCodeFullKeyboard"
+                style="@style/setting_text"
+                android:layout_marginTop="10dp"
+                android:enabled="true" />
+
+            <TextView
+                style="@style/setting_text"
+                android:text="Device Name" />
+
+            <EditText
+                android:id="@+id/etDeviceName"
+                android:text="Mobile"
+                style="@style/setting_input_box_text" />
+
+            <TextView
+                style="@style/setting_text"
+                android:text="Rounding Method" />
+
+            <TextView
+                android:id="@+id/tvRoundingMethod"
+                style="@style/setting_input_box"
+                android:gravity="center_vertical"
+                android:text="Round" />
+
+            <TextView
+                style="@style/setting_text"
+                android:text="Split Table Display" />
+
+            <TextView
+                android:id="@+id/tvSplitTableDisplayMethod"
+                style="@style/setting_input_box"
+                android:gravity="center_vertical"
+                android:text="Hide" />
+
+            <TextView
+                style="@style/setting_text"
+                android:text="Decimal Place" />
+
+            <EditText
+                android:id="@+id/etDecimalPlace"
+                style="@style/setting_input_box"
+                android:digits="0123456789" />
+
+            <TextView
+                style="@style/setting_text"
+                android:text="Enable Cover Count" />
+
+            <TextView
+                android:id="@+id/tvEnableCoverCount"
+                style="@style/setting_input_box"
+                android:gravity="center_vertical"
+                android:text="Hide" />
+
+            <TextView
+                style="@style/setting_text"
+                android:text="Activation Code" />
+
+            <EditText
+                android:id="@+id/etActivationCode"
+                style="@style/setting_input_box_password"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/login_button"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffffff"
+            android:background="@drawable/btn_cancel"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            style="@style/login_button"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

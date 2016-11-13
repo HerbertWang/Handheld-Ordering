@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Caterlord® Handheld Ordering</string>
+    <string name="loading">Loading...</string>
+    <string name="login_error" formatted="false">Error:%s</string>
+    <string name="staff_number">Staff Code</string>
+    <string name="confirm">Confirm</string>
+    <string name="system_prompt">System Alert</string>
+    <string name="cancel">Cancel</string>
+    <string name="exit_system">Confirm to quit？</string>
+    <string name="network_error">Connection error, please check your network connection！</string>
+    <string name="result_is_error">300 Staff Authentication Error</string>
+    <string name="result_is_invalid">500 System Error</string>
+    <string name="logout">Logout</string>
+    <string name="split">Split Table</string>
+
+    <!-- setting -->
+    <string name="system_setup_no_complete">System config not ready</string>
+    <string name="no_set_ip_address">Please enter host IP Address</string>
+    <string name="no_set_shop_id">Please enter Shop ID</string>
+    <string name="no_set_account_id">Please enter Account ID</string>
+    <string name="no_set_category_id">Please enter Category ID</string>
+    <string name="no_set_round_method">Please enter Round Method</string>
+    <string name="no_set_decimal_place">Please enter Decimal Place</string>
+    <string name="no_set_device_name">Please enter Device Name</string>
+    <string name="no_set_activation_code">Please enter Activation Code</string>
+    <string name="invalid_activation_code">Invalid Activation Code</string>
+
+    <!-- sharedpreferences -->
+    <string name="sharedpreferences">userinfo</string>
+    <string name="shop_id">shop_id</string>
+    <string name="ip">ip</string>
+    <string name="account_id">account_id</string>
+    <string name="category_id">category_id</string>
+    <string name="round_method">round_method</string>
+    <string name="split_table_display_method">split_table_display_method</string>
+    <string name="enable_cover_count">enable_cover_count</string>
+    <string name="decimal_place">decimal_place</string>
+    <string name="device_name">device_name</string>
+    <string name="activation_code">activation_code</string>
+    <string name="quick_code_text_pad">quick_code_text_pad</string>
+
+    <!-- http request error reason -->
+    <string name="timout">Connection Timeout</string>
+    <string name="remote_server_error">System Error</string>
+    <string name="no_data">No Data Retrieved</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="gaima">Mod.</string>
+    <string name="delete">Delete</string>
+    <string name="jiaoqi">Hold</string>
+    <string name="qicai">Fire</string>
+    <string name="send_order">Send</string>
+    <string name="total">Subtotal</string>
+    <string name="total_price">Total</string>
+    <string name="price_format" formatted="false">$%s</string>
+    <string name="operation_over">Cancel</string>
+    <string name="back">Back</string>
+    <string name="search">Search</string>
+    <string name="locked">This table is in used.</string>
+    <string name="isClear">Clean complete?</string>
+    <string name="table_code" formatted="false">Table %s</string>
+    <string name="back_catgory">Category</string>
+    <string name="clean">Soldout</string>
+    <string name="clean_1">Limited Item</string>
+    <string name="already_clean">This item is soldout</string>
+    <string name="money_format" formatted="false">$%s</string>
+    <string name="submitted">Cancel item of sent order must be perform in POS terminal</string>
+    <string name="no_jiaoqi_not_qicai">Cannot fire an item not in hold</string>
+    <string name="no_send_not_qicai">Cannot fire item in unsent order</string>
+    <string name="alreay_send_not_jiaoqi">Item in sent order cannot be hold</string>
+    <string name="gaima_no_jiaoqi">Modifier cannot be hold</string>
+    <string name="more_than_number">Input number is over remaining quantity</string>
+    <string name="submitted_not_change">Item quantity cannot be changed in sent order</string>
+    <string name="already_qicai_no_again_qicai">Fired item cannot be fired again</string>
+    <string name="commit_order_success">Send Successful</string>
+    <string name="gr_access_denied">Permission denined</string>
+    <string name="pop_title_disable_reason">Cancel Reason</string>
+    <string name="pop_title_disable_qty">Cancel Quantity</string>
+    <string name="pop_title_disable_qty_invalid">Invalid quantity</string>
+    <string name="pop_title_input_price">Amount</string>
+    <string name="pop_title_input_name">Name</string>
+    <string name="pop_title_conver_count">Number of People</string>
+    <string name="quick_code_switch_full_text">Search by item name</string>
+    <string name="quick_code_show_text_pad">Text Quick Code</string>
+    <string name="change_table">Change Table</string>
+    <string name="table_occupied">Please select an empty table</string>
+    <string name="unsupport_version">Version not support, please contact customer service to upgrade your Caterlord. </string>
+    <string name="cannot_change_table_unsave_item">Have unsubmitted item, cannot change table</string>
+    <string name="print_bill">Print Bill</string>
+</resources>

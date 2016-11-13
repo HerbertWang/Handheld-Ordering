@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="bg_color_blue">#0A96D4</color>
+    <color name="bg_color_gray">#D8D8D8</color>
+    <color name="bg_color_dark_gray">#888888</color>
+    <color name="login_error_prompt_red">#FF0000</color>
+    <color name="light_blue">#D5DFE2</color>
+    <color name="highlight_blue">#8ce3ff</color>
+    <color name="light_yellow">#D3C154</color>
+    <color name="light_red">#7D0000</color>
+    <color name="light_yellow_1">#E6E692</color>
+</resources>

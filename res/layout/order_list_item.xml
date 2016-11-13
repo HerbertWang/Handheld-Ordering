@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutLevelOne"
+        style="@style/fill_wrap"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            style="@style/fill_wrap"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:id="@+id/tvLevelOneStatus"
+                android:layout_width="18dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="18dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvNumber"
+                style="@style/wrap"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/tvLevelOneName"
+                style="@style/wrap"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            style="@style/fill_wrap"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+id/tvLevelOneCount"
+                style="@style/wrap"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvLevelOnePrice"
+                style="@style/wrap"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutLevelTwo"
+        style="@style/fill_wrap"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutLevelThree"
+        style="@style/fill_wrap"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+</LinearLayout>

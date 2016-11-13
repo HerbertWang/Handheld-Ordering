@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:clickable="false" >
+
+    <RelativeLayout 
+        android:id="@+id/menupane"
+        style="@style/fill" >
+
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" >
+
+            <AutoCompleteTextView
+                android:id="@+id/Changemenuindicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:ems="10"
+                android:text="@string/change_menu" >
+
+                <requestFocus />
+            </AutoCompleteTextView>
+
+        </RelativeLayout>
+
+        <!--<ScrollLayout
+            android:id="@+id/scrollLayout"
+            style="@style/fill"
+            android:layout_below="@+id/layoutTop"
+            android:layout_marginBottom="20dp" />-->
+
+        <GridView
+            android:id="@+id/menuGridView"
+            style="@style/fill"
+            android:layout_below="@+id/layoutTop"
+            android:layout_marginBottom="20dp"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"
+            android:numColumns="1" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

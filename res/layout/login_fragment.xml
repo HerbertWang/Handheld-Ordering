@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_gray"
+    android:orientation="vertical" >
+
+    <ScrollView
+        style="@style/fill"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/fill"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvError"
+                style="@style/wrap"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/login_error_prompt_red"
+                android:textSize="24dp" />
+
+            <TextView
+                style="@style/wrap"
+                android:layout_marginTop="40dp"
+                android:text="@string/staff_number"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/etStaffNum"
+                style="@style/input_box"
+                android:layout_marginTop="20dp"
+                android:inputType="phone" />
+
+            <RelativeLayout style="@style/fill_wrap" >
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    style="@style/login_button"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

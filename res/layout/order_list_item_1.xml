@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutLevelTwo"
+        style="@style/fill_wrap"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/light_yellow_1" >
+
+        <LinearLayout
+            style="@style/wrap"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/tvLevelTwoStatus"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/indicator_n" />
+
+            <TextView
+                android:id="@+id/tvLevelTwoName"
+                style="@style/wrap"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLevelTwoPrice"
+            style="@style/wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="0.00"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</LinearLayout>
