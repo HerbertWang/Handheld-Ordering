@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/tvErrorTitle"
+            style="@style/wrap"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tvErrorPrompt"
+            style="@style/wrap"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnErrorConfirm"
+            style="@style/login_button"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/btn_prompt_grey"
+            android:text="@string/confirm" />
+
+        <!--<Button
+            android:id="@+id/btnErrorCancel"
+            style="@style/login_button"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_cancel"
+            android:text="@string/cancel" />-->
+    </LinearLayout>
+
+</LinearLayout>

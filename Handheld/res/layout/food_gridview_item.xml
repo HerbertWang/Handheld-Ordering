@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp" >
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/fill"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvClean"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/light_red"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/bg_color_blue"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

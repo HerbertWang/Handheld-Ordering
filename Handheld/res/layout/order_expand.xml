@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        style="@style/fill" >
+
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp" >
+
+            <Button
+                android:id="@+id/btn_coll"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="Collapse"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutItemMaster"
+            android:layout_width="fill_parent"
+            android:layout_height="210dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/layoutTop"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listView"
+                style="@style/fill"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:cacheColorHint="#00000000"
+                android:listSelector="#00000000" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/light_blue"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btnkeyPan"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_keypan" />
+
+            <Button
+                android:id="@+id/btnSendOrder"
+                style="@style/login_button"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_login"
+                android:text="@string/send_order"
+                android:layout_weight="0.84" />
+
+            <LinearLayout
+                style="@style/fill"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                android:layout_width="23dp">
+
+                <LinearLayout
+                    android:layout_width="37dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="right|center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/wrap"
+                        android:text="@string/total"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        style="@style/wrap"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/total_price"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/wrap_fill"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvTotal"
+                        style="@style/wrap"
+                        android:layout_marginLeft="30dp"
+                        android:text="$0.00"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/tvTotalPrice"
+                        style="@style/wrap"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="2dp"
+                        android:text="$0.00"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    <include
+        android:id="@+id/calculateLayout"
+        layout="@layout/calculate_food_item"
+        android:visibility="gone" />
+   
+</RelativeLayout>

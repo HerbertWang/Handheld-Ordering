@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearlayoutKeyPan"
+        style="@style/fill"
+        android:background="@drawable/shadow"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="372dp"
+            android:background="@color/bg_color_gray"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/alter_order_number_text"
+                android:id="@+id/tvPrintBill"
+                android:layout_width="match_parent"
+                android:text="@string/print_bill"
+                android:layout_height="46dp" />
+
+            <TextView
+                style="@style/alter_order_number_text"
+                android:id="@+id/tvChangeTable"
+                android:layout_width="match_parent"
+                android:text="@string/change_table"
+                android:layout_height="46dp" />
+
+            <TextView
+                android:id="@+id/tvNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical|right"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textSize="20dp" />
+
+            <LinearLayout style="@style/alter_order_number_layout" >
+
+                <TextView
+                    android:id="@+id/tvJiaoQi"
+                    style="@style/alter_order_number_text"
+                    android:background="@drawable/btn_keypad_blue"
+                    android:text="@string/jiaoqi"/>
+
+                <TextView
+                    android:id="@+id/tvSeven"
+                    style="@style/alter_order_number_text"
+                    android:text="7" />
+
+                <TextView
+                    android:id="@+id/tvEight"
+                    style="@style/alter_order_number_text"
+                    android:text="8" />
+
+                <TextView
+                    android:id="@+id/tvNine"
+                    style="@style/alter_order_number_text"
+                    android:text="9" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/alter_order_number_layout" >
+
+                <TextView
+                    android:id="@+id/tvQiCai"
+                    style="@style/alter_order_number_text"
+                    android:background="@drawable/btn_keypad_blue"
+                    android:text="@string/qicai"/>
+
+                <TextView
+                    android:id="@+id/tvFour"
+                    style="@style/alter_order_number_text"
+                    android:text="4" />
+
+                <TextView
+                    android:id="@+id/tvFive"
+                    style="@style/alter_order_number_text"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/tvSix"
+                    style="@style/alter_order_number_text"
+                    android:text="6" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/alter_order_number_layout" >
+
+                <TextView
+                    android:id="@+id/tvDelete"
+                    style="@style/alter_order_number_text"
+                    android:background="@drawable/btn_keypad_blue"
+                    android:text="@string/delete" />
+
+                <TextView
+                    android:id="@+id/tvOne"
+                    style="@style/alter_order_number_text"
+                    android:text="1" />
+
+                <TextView
+                    android:id="@+id/tvTwo"
+                    style="@style/alter_order_number_text"
+                    android:text="2" />
+
+                <TextView
+                    android:id="@+id/tvThree"
+                    style="@style/alter_order_number_text"
+                    android:text="3" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/alter_order_number_layout" >
+
+                <TextView
+                    android:id="@+id/tvGaiMa"
+                    style="@style/alter_order_number_text"
+                    android:background="@drawable/btn_keypad_blue"
+                    android:text="@string/gaima" />
+
+                <TextView
+                    android:id="@+id/tvZero"
+                    style="@style/alter_order_number_text"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/tvConfirm"
+                    style="@style/alter_order_number_text"
+                    android:layout_width="120dp"
+                    android:text="@string/confirm" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
